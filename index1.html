@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>Easy Books Store</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="bower_components/raty/lib/jquery.raty.css">
+
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript Link -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/raty/lib/jquery.raty.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+
+    <script src="js/basic.js"></script>
+</head>
+
+<body>
+
+    <!-- nav-bar -->
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="topLogo"><i class="fa fa-3x fa-book" aria-hidden="true">Easy Books Store</i>
+
+            </div>
+
+
+            <div class="topData">
+                <ul>
+                    <ui><a class="topData-bar" href="shoppingcar.html">Shopping Car</a></ui>
+                    <ui><a class="topData-bar" href="useraccount.html">My Account</a></ui>
+                    <ui><a class="topData-bar" href="contact.html">Contact</a></ui>
+                    <ui><a class="topData-bar" href="help.html">Help</a></ui>
+                </ul>
+            </div>
+
+
+            <!-- 文字輸入&按鈕群組開始 -->
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Search</button>
+              </span>
+            </div>
+            <!-- 文字輸入&按鈕群組結尾 -->
+        </div>
+    </nav>
+
+
+    <!-- header -->
+
+    <header>
+
+        <div class="container">
+            <!--按鈕群組開始-->
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">Home</button>
+                <button type="button" class="btn btn-default">Subject</button>
+                <button type="button" class="btn btn-default">Shopping</button>
+                <button type="button" class="btn btn-default">Catalog</button>
+                <button type="button" class="btn btn-default">About</button>
+            </div>
+            <!--按鈕群組結尾-->
+        </div>
+    </header>
+
+    <!-- Popular Books -->
+
+    <div class="container">
+        <h1>Popular Books</h1>
+        <section>
+            <!--輪播開始-->
+            <div id="slideshow1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!--輪播圖片或內容-->
+                    <div class="item active">
+                        <div class="carousel-caption">
+                            <img id="picture" src="img/9781138076693.jpg" alt="">
+                            <h3>Ilaria Mazzoleni</h3>
+                            <p>Architecture Follows Nature-Biomimetic Principles for Innovative Design</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <img id="picture" src="img/9781138121805.jpg" alt="">
+                            <h3>Tolya Stonorov</h3>
+                            <p>The Design-Build Studio: Crafting Meaningful Work in Architecture Education</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <img id="picture" src="img/9781138654204.jpg" alt="">
+                            <h3>Christopher Beorkrem</h3>
+                            <p>Material Strategies in Digital Fabrication</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <img id="picture" src="img/9781138723368.jpg" alt="">
+                            <h3>Sam Hurt</h3>
+                            <p>Building Systems in Interior Design</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <img id="picture" src="img/9781138783973.jpg" alt="">
+                            <h3>Jenny E. Sabin and Peter Lloyd Jones</h3>
+                            <p>LabStudio: Design Research between Architecture and Biology</p>
+                        </div>
+                    </div>
+                </div>
+                <!--上一頁 下一頁 按鈕-->
+                <div class="control-btn">
+                    <a href="#slideshow1" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a href="#slideshow1" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+                </div>
+                <!--小圓點換頁-->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow1" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow1" data-slide-to="1"></li>
+                    <li data-target="#slideshow1" data-slide-to="2"></li>
+                    <li data-target="#slideshow1" data-slide-to="3"></li>
+                    <li data-target="#slideshow1" data-slide-to="4"></li>
+                </ol>
+            </div>
+            <!--輪播結尾-->
+
+
+
+
+        </section>
+    </div>
+    <!-- Popular Books End-->
+
+    <!-- New Release -->
+
+    <section>
+        <div class="container ">
+            <h1>New Release</h1>
+            <div class="row col-md-3 col-md-offset-1">
+                <img id="picture" src="img/9781138851719.jpg" alt="">
+                <h3>Randall Korman</h3>
+                <p>The Architecture of the Facade</p>
+            </div>
+            <div class="row col-md-3">
+                <img id="picture" src="img/9781138929548.jpg" alt="">
+                <h3>Gail Peter Borden</h3>
+                <p>Lineament: Material, Representation and the Physical Figure in Architectural Production</p>
+            </div>
+            <div class="row col-md-3">
+                <img id="picture" src="img/9781138930933.jpg" alt="">
+                <h3>Elizabeth J. Grant</h3>
+                <p>Integrating Building Performance with Design: An Architecture Student’s Guidebook</p>
+            </div>
+            <div class="row col-md-3">
+                <img id="picture" src="img/9781844658695.jpg" alt="">
+                <h3>Kelli C. Rudolph</h3>
+                <p>Taste and the Ancient Senses (The Senses in Antiquity)</p>
+            </div>
+            <div class="row col-md-3 col-md-offset-1">
+                <img id="picture" src="img/9781138790223.jpg" alt="">
+                <h3>Kelli C. Rudolph</h3>
+                <p>Taste and the Ancient Senses (The Senses in Antiquity)</p>
+            </div>
+            <div class="row col-md-3">
+                <img id="picture" src="img/9781138194977.jpg" alt="">
+                <h3>Kelli C. Rudolph</h3>
+                <p>Taste and the Ancient Senses (The Senses in Antiquity)</p>
+            </div>
+            <div class="row col-md-3">
+                <img id="picture" src="img/9780415791137.jpg" alt="">
+                <h3>Kelli C. Rudolph</h3>
+                <p>Taste and the Ancient Senses (The Senses in Antiquity)</p>
+            </div>
+            <div class="row col-md-3">
+                <img id="picture" src="img/9780415645430.jpg" alt="">
+                <h3>Kelli C. Rudolph</h3>
+                <p>Taste and the Ancient Senses (The Senses in Antiquity)</p>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+    <!-- New Release End-->
+
+    <!-- Publisher -->
+    <section>
+
+        <div class="container">
+            <h1>Publisher</h1>
+            <div class="row ">
+                <ul>
+                    <ui>
+                        <a href="www.pearson.com"><img class="pubLogo" src="/img/pub/pearson.png" alt=""></a>
+
+                    </ui>
+                    <ui>
+                        <a href="www.routledge.com"><img class="pubLogo" src="/img/pub/rouutledge.png" alt=""></a>
+                    </ui>
+                    <ui>
+                        <a href="www.wiley.com"><img class="pubLogo" src="/img/pub/wiley.png" alt=""></a>
+                    </ui>
+                    <ui>
+                        <a href="www.pearson.com"><img class="pubLogo" src="/img/pub/HUP-logo-oneline-372x50.png" alt=""></a>
+                    </ui>
+                    <ui>
+                        <a href="www.hup.harvard.edu"><img class="pubLogo" src="/img/pub/springer.gif" alt=""></a>
+                    </ui>
+                    <ui>
+                        <a href="www.bloomsbury.com"><img class="pubLogo" src="/img/pub/bloomsbury.png" alt=""></a>
+                    </ui>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- Publisher End-->
+
+
+    <!-- footer -->
+    <footer id="footer">
+
+        <h1 class="section-title">Contact Us</h1>
+        <h4><a href="" class="email">service@greenpo.com.tw</a></h4>
+        <p class="address">106台北市建國南路二段334巷3號</p>
+        <div class="social-links">
+            <a href="#"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <p class="copy-right">&copy; 2017 Green Po INCROP.</p>
+
+
+    </footer>
+
+    <!-- footer end-->
+
+    <!-- goBackBtn -->
+    <button id="goBackBtn">Go Back</button>
+
+
+
+
+
+</body>
+
+</html>
